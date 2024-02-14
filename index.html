@@ -102,18 +102,18 @@
                         <h2 class="font-bold text-3xl">Rhombus</h2>
                         <div>
                             <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
-                            <input type="text" placeholder="b"
+                            <input id="RhombusD1" type="text" placeholder="b"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
-                            <input type="text" placeholder="h"
+                            <input id="RhombusD2" type="text" placeholder="h"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                            <p class="text-lg font-bold">Area: <span id="rhombusArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button
+                            <button onclick="calculateRhombus()"
                                 class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Calculate</button>
                         </div>
                     </div>
@@ -128,18 +128,18 @@
                         <h2 class="font-bold text-3xl">Pentagon</h2>
                         <div>
                             <p>Area (A) = 0.5 x p x b</p>
-                            <input type="text" placeholder="p"
+                            <input id="pentagonPerimeter" type="text" placeholder="p"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
-                            <input type="text" placeholder="b"
+                            <input id="pentagonBase" type="text" placeholder="b"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                            <p class="text-lg font-bold">Area: <span id="pentagonArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button
+                            <button onclick="calculatePentagon()"
                                 class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Calculate</button>
                         </div>
                     </div>
@@ -154,18 +154,18 @@
                         <h2 class="font-bold text-3xl">Ellipse</h2>
                         <div>
                             <p>Area (A) = Rab</p>
-                            <input type="text" placeholder="a"
+                            <input id="ellipseA-axis" type="text" placeholder="a"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
-                            <input type="text" placeholder="b"
+                            <input id="ellipseB-axis" type="text" placeholder="b"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                            <p class="text-lg font-bold">Area: <span id="ellipseArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button
+                            <button onclick="calculateEllipse()"
                                 class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Calculate</button>
                         </div>
                     </div>
