@@ -76,18 +76,18 @@
                         <h2 class="font-bold text-3xl">Parallelogram</h2>
                         <div>
                             <p>Area (A) = b x h</p>
-                            <input type="text" placeholder="b"
+                            <input id="parallelogramBase" type="text" placeholder="b"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
-                            <input type="text" placeholder="h"
+                            <input id="parallelogramHeight" type="text" placeholder="h"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                            <p class="text-lg font-bold">Area: <span id="parallelogramArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button
+                            <button onclick="calculateParallelogram()"
                                 class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Calculate</button>
                         </div>
                     </div>

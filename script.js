@@ -31,3 +31,21 @@ function calculateRectangle() {
   rectangleWidth.value = "";
   rectangleLength.value = "";
 }
+
+// Area of Parallelogram
+function calculateParallelogram() {
+  let parallelogramBase = document.getElementById("parallelogramBase");
+  let parallelogramHeight = document.getElementById("parallelogramHeight");
+
+  if (parallelogramBase.value && parallelogramHeight.value) {
+    const Area =
+      parseFloat(parallelogramBase.value) *
+      parseFloat(parallelogramHeight.value);
+
+    document.getElementById("parallelogramArea").innerText = Area;
+  } else {
+    alert("input should be number");
+  }
+  parallelogramBase.value = "";
+  parallelogramHeight.value = "";
+}
