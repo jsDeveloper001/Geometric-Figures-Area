@@ -1,15 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geometric Figures Area</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
+    <main class="mt-8 lg:mx-4">
+        <div class="grid grid-cols-[3fr,1fr] gap-6">
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
+                <!-- Triangle Card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="triangle" class="w-full" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="font-bold text-3xl text-center">Triangle</h2>
+                        <div>
+                            <p>Area (A) = 0.5 x b x h</p>
+                            <input type="text" placeholder="b"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                            <input type="text" placeholder="h"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rectangle Card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rectangle.png" alt="Rectangle" class="w-full" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="font-bold text-3xl text-center">Rectangle</h2>
+                        <div>
+                            <p>Area (A) = w x I</p>
+                            <input type="text" placeholder="b"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                            <input type="text" placeholder="h"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parallelogram Card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/parallelogram.png" alt="Parallelogram" class="w-full" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="font-bold text-3xl text-center">Parallelogram</h2>
+                        <div>
+                            <p>Area (A) = b x h</p>
+                            <input type="text" placeholder="b"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                            <input type="text" placeholder="h"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rhombus Card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rhombus.png" alt="Rhombus" class="w-full" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="font-bold text-3xl text-center">Rhombus</h2>
+                        <div>
+                            <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                            <input type="text" placeholder="b"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                            <input type="text" placeholder="h"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pentagon Card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/pentagon.png" alt="Pentagon" class="w-full" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="font-bold text-3xl text-center">Pentagon</h2>
+                        <div>
+                            <p>Area (A) = 0.5 x p x b</p>
+                            <input type="text" placeholder="p"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                            <input type="text" placeholder="b"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ellipse Card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/ellipse.png" alt="Ellipse" class="w-full" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="font-bold text-3xl text-center">Ellipse</h2>
+                        <div>
+                            <p>Area (A) = Rab</p>
+                            <input type="text" placeholder="a"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                            <input type="text" placeholder="b"
+                                class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
+                                class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-[#1111111A] rounded-lg text-[#111111CC] font-bold text-center text-xl">
+                <h2 class="p-7">Area Calculation</h2>
+            </div>
+        </div>
+
+    </main>
 </body>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+
 </html>
