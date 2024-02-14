@@ -24,10 +24,10 @@
                         <h2 class="font-bold text-3xl text-center">Triangle</h2>
                         <div>
                             <p>Area (A) = 0.5 x b x h</p>
-                            <input type="text" placeholder="b"
+                            <input id="triangleBase" type="text" placeholder="b"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
-                            <input type="text" placeholder="h"
+                            <input id="triangleHeight" type="text" placeholder="h"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
                         </div>
@@ -35,7 +35,7 @@
                             <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                            <button onclick="calculateTriangle()" class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
                         </div>
                     </div>
                 </div>
