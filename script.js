@@ -14,3 +14,20 @@ function calculateTriangle() {
   triangleBase.value = "";
   triangleHeight.value = "";
 }
+
+// Area of Rectangle
+function calculateRectangle() {
+  let rectangleWidth = document.getElementById("rectangleWidth");
+  let rectangleLength = document.getElementById("rectangleLength");
+
+  if (rectangleWidth.value && rectangleLength.value) {
+    const Area =
+      parseFloat(rectangleWidth.value) * parseFloat(rectangleLength.value);
+
+    document.getElementById("rectangleArea").innerText = Area;
+  } else {
+    alert("input should be number");
+  }
+  rectangleWidth.value = "";
+  rectangleLength.value = "";
+}

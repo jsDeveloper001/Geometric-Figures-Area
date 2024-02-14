@@ -21,7 +21,7 @@
                         <img src="images/triangle.png" alt="triangle" class="w-full" />
                     </figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-3xl text-center">Triangle</h2>
+                        <h2 class="font-bold text-3xl">Triangle</h2>
                         <div>
                             <p>Area (A) = 0.5 x b x h</p>
                             <input id="triangleBase" type="text" placeholder="b"
@@ -35,7 +35,8 @@
                             <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button onclick="calculateTriangle()" class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                            <button onclick="calculateTriangle()"
+                                class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -46,21 +47,22 @@
                         <img src="images/rectangle.png" alt="Rectangle" class="w-full" />
                     </figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-3xl text-center">Rectangle</h2>
+                        <h2 class="font-bold text-3xl">Rectangle</h2>
                         <div>
-                            <p>Area (A) = w x I</p>
-                            <input type="text" placeholder="b"
+                            <p>Area (A) = w x l</p>
+                            <input id="rectangleWidth" type="text" placeholder="w"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
-                            <input type="text" placeholder="h"
+                            <input id="rectangleLength" type="text" placeholder="l"
                                 class="w-16 rounded bg-[#F1F1F1] p-[6px] focus::text-[#414141]"><span
                                 class="ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
+                            <p class="text-lg font-bold">Area: <span id="rectangleArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                            <button onclick="calculateRectangle()"
+                                class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +73,7 @@
                         <img src="images/parallelogram.png" alt="Parallelogram" class="w-full" />
                     </figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-3xl text-center">Parallelogram</h2>
+                        <h2 class="font-bold text-3xl">Parallelogram</h2>
                         <div>
                             <p>Area (A) = b x h</p>
                             <input type="text" placeholder="b"
@@ -85,7 +87,8 @@
                             <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                            <button
+                                class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +99,7 @@
                         <img src="images/rhombus.png" alt="Rhombus" class="w-full" />
                     </figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-3xl text-center">Rhombus</h2>
+                        <h2 class="font-bold text-3xl">Rhombus</h2>
                         <div>
                             <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                             <input type="text" placeholder="b"
@@ -110,7 +113,8 @@
                             <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                            <button
+                                class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -121,7 +125,7 @@
                         <img src="images/pentagon.png" alt="Pentagon" class="w-full" />
                     </figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-3xl text-center">Pentagon</h2>
+                        <h2 class="font-bold text-3xl">Pentagon</h2>
                         <div>
                             <p>Area (A) = 0.5 x p x b</p>
                             <input type="text" placeholder="p"
@@ -135,7 +139,8 @@
                             <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                            <button
+                                class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -146,7 +151,7 @@
                         <img src="images/ellipse.png" alt="Ellipse" class="w-full" />
                     </figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-3xl text-center">Ellipse</h2>
+                        <h2 class="font-bold text-3xl">Ellipse</h2>
                         <div>
                             <p>Area (A) = Rab</p>
                             <input type="text" placeholder="a"
@@ -160,7 +165,8 @@
                             <p class="text-lg font-bold">Area: <span id="triangleArea"></span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions">
-                            <button class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Buy Now</button>
+                            <button
+                                class="mt-8 btn bg-[#1090D8] text-white text-lg font-medium w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
